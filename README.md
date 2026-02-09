@@ -107,7 +107,7 @@ Regional performance varies significantly across states
 
 📷 Dashboard Preview
 
-
+<img width="1302" height="709" alt="Image" src="https://github.com/user-attachments/assets/7f2d63b2-9eac-41f7-ad3e-fb0ce286f320" />
 
 🚀 Conclusion
 
@@ -116,4 +116,5 @@ This dashboard provides a clear, data-driven overview of business performance an
 👤 Author
 
 Yogesh S
+
 Aspiring Data Analyst | Power BI | Data Analytics
