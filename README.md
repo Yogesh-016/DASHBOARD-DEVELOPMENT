@@ -1,120 +1,129 @@
-#Dashboard Development
+# 📊 Superstore – Sales & Profit Analysis Dashboard (Power BI)
 
-*COMPANY *: CODTECH IT SOLUTIONS
+---
 
-*NAME *: Yogesh S
+## 🏢 Internship Details
 
-*INTERN ID *: CTIS3967
+| Field | Details |
+|---|---|
+| **Company** | CODTECH IT SOLUTIONS |
+| **Name** | Yogesh S |
+| **Intern ID** | CTIS3967 |
+| **Domain** | Data Analysis |
+| **Duration** | 4 Weeks |
+| **Mentor** | Neela Santosh |
 
-*DOMAIN *: Data Analysis
+---
 
-*DURATION *: 4 WEEEKS
+## 📌 Project Overview
 
-*MENTOR *: NEELA SANTOSH
+This project focuses on analyzing **sales performance**, **profitability**, **customer segments**, and **regional trends** using the Sample Superstore dataset. The dashboard is designed as a **single-page interactive Power BI report** to provide quick and meaningful business insights.
 
-📊 Superstore – Sales & Profit Analysis Dashboard (Power BI)
-📌 Project Overview
+---
 
-This project focuses on analyzing sales performance, profitability, customer segments, and regional trends using the Sample Superstore dataset.
-The dashboard is designed as a single-page interactive Power BI report to provide quick and meaningful business insights.
+## 📂 Dataset
 
-📂 Dataset
+- **Source:** Sample Superstore Dataset
+- **Records:** Order-level sales data
 
-Source: Sample Superstore dataset
+### Key Fields
 
-Records: Order-level sales data
+| Field | Description |
+|---|---|
+| Order Date / Ship Date | Temporal order information |
+| Category / Sub-Category / Product | Product hierarchy |
+| Region / State | Geographic data |
+| Sales / Profit / Quantity / Discount | Financial metrics |
 
-Key Fields:
+---
 
-Order Date, Ship Date
+## 🎯 Objectives
 
-Category, Sub-Category, Product
+- Analyze overall sales and profit performance
+- Identify top-performing categories and sub-categories
+- Understand customer segment contribution
+- Analyze regional and state-wise sales
+- Track monthly sales trends
 
-Region, State
+---
 
-Sales, Profit, Quantity, Discount
+## 📊 Key KPIs
 
-🎯 Objectives
+| KPI | Description |
+|---|---|
+| 📦 Total Orders | Count of distinct orders |
+| 💰 Total Sales | Sum of all sales |
+| 📈 Total Profit | Sum of all profit |
+| 🧮 Profit Margin | Profit as a % of sales |
+| 🔢 Total Quantity Sold | Sum of all quantities |
 
-Analyze overall sales and profit performance
+---
 
-Identify top-performing categories and sub-categories
+## 📈 Dashboard Features
 
-Understand customer segment contribution
+- **Sales by Category** – Compare major product categories
+- **Sales by Sub-Category** – Identify top and low-performing products
+- **Sales by Segment** – Consumer, Corporate, Home Office analysis
+- **Monthly Sales Trend** – Time-based performance analysis
+- **State-wise Sales Map** – Geographic distribution of sales
+- **Interactive Slicers** – Region and Segment filters
 
-Analyze regional and state-wise sales
+---
 
-Track monthly sales trends
+## 🧮 DAX Measures Used
 
-📊 Key KPIs
-
-Total Orders
-
-Total Sales
-
-Total Profit
-
-Profit Margin
-
-Total Quantity Sold
-
-📈 Dashboard Features
-
-Sales by Category – Compare major product categories
-
-Sales by Sub-Category – Identify top and low-performing products
-
-Sales by Segment – Consumer, Corporate, Home Office analysis
-
-Monthly Sales Trend – Time-based performance analysis
-
-State-wise Sales Map – Geographic distribution of sales
-
-Interactive Slicers – Region and Segment filters
-
-🧮 DAX Measures Used
-Total Sales = SUM('Sample Superstore'[Sales])
-
-Total Profit = SUM('Sample Superstore'[Profit])
-
+```dax
+Total Sales    = SUM('Sample Superstore'[Sales])
+Total Profit   = SUM('Sample Superstore'[Profit])
 Total Quantity = SUM('Sample Superstore'[Quantity])
+Total Orders   = DISTINCTCOUNT('Sample Superstore'[Order ID])
+Profit Margin  = DIVIDE([Total Profit], [Total Sales])
+```
 
-Total Orders = DISTINCTCOUNT('Sample Superstore'[Order ID])
+---
 
-Profit Margin = DIVIDE([Total Profit], [Total Sales])
+## 🛠️ Tools & Technologies
 
-🛠 Tools & Technologies
+| Tool | Purpose |
+|---|---|
+| Power BI Desktop | Dashboard creation & visualization |
+| DAX | Custom measures and calculations |
+| Power Query | Data transformation & cleaning |
+| Excel / CSV | Dataset source |
 
-Power BI Desktop
+---
 
-DAX
+## 📌 Key Insights
 
-Power Query
+- 💻 **Technology** category contributes the highest sales
+- 👥 **Consumer** segment generates the largest revenue share
+- ⚠️ Certain sub-categories show **high sales but low profit**
+- 📆 Sales show a **noticeable increase towards year-end**
+- 🗺️ Regional performance **varies significantly** across states
 
-Excel / CSV Dataset
+---
 
-📌 Insights Generated
+## 📷 Dashboard Preview
 
-Technology category contributes the highest sales
+![Dashboard Preview](https://github.com/user-attachments/assets/7f2d63b2-9eac-41f7-ad3e-fb0ce286f320)
 
-Consumer segment generates the largest revenue share
+---
 
-Certain sub-categories show high sales but low profit
+## 🚀 Conclusion
 
-Sales show a noticeable increase towards year-end
+This dashboard provides a **clear, data-driven overview** of business performance and helps stakeholders make informed decisions related to:
 
-Regional performance varies significantly across states
+- Sales strategy
+- Product focus
+- Regional planning
 
-📷 Dashboard Preview
+---
 
-<img width="1302" height="709" alt="Image" src="https://github.com/user-attachments/assets/7f2d63b2-9eac-41f7-ad3e-fb0ce286f320" />
+## 👤 Author
 
-🚀 Conclusion
-
-This dashboard provides a clear, data-driven overview of business performance and helps stakeholders make informed decisions related to sales strategy, product focus, and regional planning.
-
-👤 Author
-
-Yogesh S
-
+**Yogesh S**  
 Aspiring Data Analyst | Power BI | Data Analytics
+
+---
+
+> 📝 *This project was completed as part of a Data Analysis internship at CODTECH IT SOLUTIONS.*
